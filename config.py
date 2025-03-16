@@ -1,20 +1,22 @@
 from pathlib import Path
 
-def get_config():
+def get_config(batch_size=16, num_epochs=10, lr=10**-4, seq_len=350, d_model=512, datasource='opus_books', 
+               lang_src='en', lang_tgt='it', model_folder='weights', model_basename='tmodel_', preload='latest', 
+               tokenizer_file='tokenizer_{0}.json', experiment_name='runs/tmodel'):
     return {
-        "batch_size": 16,
-        "num_epochs": 10,
-        "lr": 10**-4,
-        "seq_len": 350,
-        "d_model": 512,
-        "datasource": 'opus_books',
-        "lang_src": "en",
-        "lang_tgt": "it",
-        "model_folder": "weights",
-        "model_basename": "tmodel_",
-        "preload": "latest",
-        "tokenizer_file": "tokenizer_{0}.json",
-        "experiment_name": "runs/tmodel"
+        "batch_size": batch_size,
+        "num_epochs": num_epochs,
+        "lr": lr,
+        "seq_len": seq_len,
+        "d_model": d_model,
+        "datasource": datasource,
+        "lang_src": lang_src,
+        "lang_tgt": lang_tgt,
+        "model_folder": model_folder,
+        "model_basename": model_basename,
+        "preload": preload,
+        "tokenizer_file": tokenizer_file,
+        "experiment_name": experiment_name
     }
 
 def get_weights_file_path(config, epoch: str):
