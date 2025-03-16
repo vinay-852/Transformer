@@ -51,7 +51,7 @@ You can run this project in Google Colab by following these steps:
 1. Open the Colab notebook: [English_To_Italian_Using_Transformer_Architecture.ipynb](English_To_Italian_Using_Transformer_Architecture.ipynb)
 2. Clone the repository:
     ```python
-    !git clone [https://github.com/vinay-852/Transformer.git](https://github.com/vinay-852/Translator_Using_Transformer_Architecture.git)
+    !git clone https://github.com/vinay-852/Translator_Using_Transformer_Architecture.git
     ```
 3. Install the dependencies:
     ```python
